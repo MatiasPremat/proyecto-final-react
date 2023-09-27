@@ -1,10 +1,10 @@
-import {BiCart} from 'react-icons/bi';
+import { BiCart } from 'react-icons/bi';
 import './CartWidget.css';
 
 const CartWidget = () => {
     return (
         <div>
-            <BiCart id='cart'/>
+            <BiCart id='cart' />
             <span id='cartNumber'>4</span>
         </div>
     )

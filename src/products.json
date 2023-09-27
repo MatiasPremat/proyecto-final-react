@@ -1,0 +1,132 @@
+[
+    {
+        "id": 0,
+        "name": "Uruguayo Imperial Cuero Liso",
+        "description": "Mate imperial de procedencia Uruguay, realizado con calabaza natural seleccionada forrada en cuero. Terminaciones perfectas, mate armónico. Guardas y virolas en alpaca cinceladas a mano.",
+        "color": "Negro",
+        "price": 35000,
+        "category": "imperial",
+        "stock": 10,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/06/2doCatalogoAbril24-1-510x510.jpg"
+    },
+    {
+        "id": 1,
+        "name": "Uruguayo Imperial Cuero Croco",
+        "description": "Mate Uruguayo imperial realizado en calabaza natural seleccionada brasilera forrada con cuero con motivo croco. Terminaciones perfectas, mate armónico. Guardas y virolas cinceladas en alpaca.",
+        "color": "Negro",
+        "price": 35000,
+        "category": "imperial",
+        "stock": 8,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/07/FBlancoJulio2-510x510.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Argentino Imperial Forrado en Cuero",
+        "description": "Mate Argentino imperial realizado en calabaza forrada en cuero. Guardas y virolas en alpaca.",
+        "color": "Negro",
+        "price": 27000,
+        "category": "imperial",
+        "stock": 15,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/06/imperial-m-45-510x510.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Imperial Calabaza y Alpaca",
+        "description": "Mate Imperial calabaza forrado en cuero vaqueta con virola y fleje de alpaca labrada,",
+        "color": "Bordó",
+        "price": 24000,
+        "category": "imperial",
+        "stock": 20,
+        "urlImg": "http://www.regionalesdelabasto.com/wp-content/uploads/2021/11/Mate-imperial-marron-copia.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Torpedo Forrado en Cuero",
+        "description": "Mate torpedo realizado en calabaza forrada con cuero seleccionado. Con guardas y virola en alpaca.",
+        "color": "Negro",
+        "price": 32000,
+        "category": "torpedo",
+        "stock": 7,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/06/torpedo-510x510.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Torpedo Imperial Forrado en Cuero",
+        "description": "Torpedo Imperial de alta calidad. Fabricado con calabaza extra gruesa y virola de alpaca y Bronce.",
+        "color": "Bordó",
+        "price": 26000,
+        "category": "torpedo",
+        "stock": 12,
+        "urlImg": "https://matekaa.com/wp-content/uploads/2023/02/mate-torpedo-imperial.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Torpedo Imperial con patas y bolitas",
+        "description": "Torpedo Imperial con patas y bolitas. Base y virola cincelada de alpaca, fleje de bronce",
+        "color": "Negro",
+        "price": 33000,
+        "category": "torpedo",
+        "stock": 14,
+        "urlImg": "https://acdn.mitiendanube.com/stores/001/278/346/products/a20211d2-42b9-400b-9b10-b251d0156bb71-a4c1010be856af8be216821769427175-640-0.webp"
+    },
+    {
+        "id": 7,
+        "name": "Camionero Forrado en Cuero con Guarda",
+        "description": "Mate camionero realizado en calabaza forrada en cuero. Virolas en alpaca o acero inoxidable con guarda de alpaca.",
+        "color": "Negro",
+        "price": 30000,
+       "category": "camionero",
+        "stock": 9,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/06/camionero-guarda-45-510x510.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Camionero Forrado en Cuero",
+        "description": "Mate camionero realizado en calabaza forrada en cuero. Virolas en acero inoxidable.",
+        "color": "Negro",
+        "price": 20000,
+       "category": "camionero",
+        "stock": 20,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/06/camionero-45-grados-510x510.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Camionero con Base de Cuero",
+        "description": "Mate de calabazas brasileñas seleccionadas con base de cuero vacuno. El tamaño y peso puede variar según el mate",
+        "color": "Marrón",
+        "price": 8000,
+        "category": "camionero",
+        "stock": 30,
+        "urlImg": "https://acdn.mitiendanube.com/stores/002/234/815/products/diseno-sin-titulo-421-cefe00882c4cd7894716885134192597-1024-1024.webp"
+    },
+    {
+        "id": 10,
+        "name": "Bombilla pico de loro tubo fino Alpaca 8 mm",
+        "description": "Bombilla pico de loro tubo de alpaca. Tubo fino de 8 mm. Boquilla en alpaca.",
+        "color": "Plateado",
+        "price": 12000,
+        "category": "bombilla",
+        "stock": 35,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/06/lisa-alpaca-8-mm-510x510.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Bombilla Recta Alpaca Pico del Rey",
+        "description": "Bombilla recta confeccionada en alpaca con cuchara grande, Boquilla en alpaca con la terminacion artesanal de las puntas llamadas pico del rey. Largo 19.5 cm.",
+        "color": "Plateado",
+        "price": 12000,
+        "category": "bombilla",
+        "stock": 22,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2023/02/Bombilla-recta-nacional-pico-del-rey-510x510.png"
+    },
+    {
+        "id": 12,
+        "name": "Bombillon Artesanal Alpaca Recta con cincelado",
+        "description": "Bombilla artesanal recta con labrado en el caño de alpaca y boquilla de bronce. Ancho de 10mm.",
+        "color": "Plateado y Dorado",
+        "price": 16000,
+        "category": "bombilla",
+        "stock": 12,
+        "urlImg": "https://matesibarra.com/wp-content/uploads/2021/12/CatNuevo2-510x510.jpg"
+    }
+]

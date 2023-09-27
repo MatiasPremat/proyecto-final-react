@@ -1,12 +1,12 @@
-#cart{
+#cart {
     font-size: 50px;
     color: white;
 }
 
-#cartNumber{
+#cartNumber {
     background-color: white;
     color: black;
     padding: 0px 4px;
     border-radius: 40%;
-    font-size: 80%;
+    font-size: 18px;
 }

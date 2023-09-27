@@ -5,29 +5,42 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 const MyNavbar = () => {
   return (
-    <Navbar expand="lg" className="bg-black" variant='dark'>
+    <Navbar expand="lg" id='nav' variant='dark'>
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={logo} alt="logo mateico mates" id='logo'/>
+        <Link to='/' id='brand'>
+          <img src={logo} alt="logo mateico mates" id='logo' />
           Mateico Mates
-        </Navbar.Brand>
+        </Link>
+        <Navbar.Brand id='slogan'>Cada mate está lleno de historias...</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Categorías" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Imperiales</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Torpedo</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Camioneros</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Bombillas</NavDropdown.Item>
+            <NavDropdown title="Categorías" id="navdrop">
+              <NavDropdown.Item>
+                <Link to='/' className='droplink'>Todo</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to='/imperial' className='droplink'>Imperiales</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to='/torpedo' className='droplink'>Torpedos</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item>
+                <Link to='/camionero' className='droplink'>Camioneros</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item>
+                <Link to='/bombilla' className='droplink'>Bombillas</Link>
+              </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#nosotros">Nosotros</Nav.Link>
-            <Nav.Link href="#contacto">Contacto</Nav.Link>
+            <Link to='/nosotros' className='navlink'>Nosotros</Link>
+            <Link to='/contacto' className='navlink'>Contacto</Link>
           </Nav>
-          <Nav.Link href="#cart"><CartWidget/></Nav.Link>
+          <Nav.Link href='#cart'><CartWidget /></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

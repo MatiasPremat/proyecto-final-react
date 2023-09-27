@@ -1,14 +1,11 @@
-import MyNavbar from './components/MyNavbar/MyNavbar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './routes/Navigation';
 
 function App() {
 
   return (
     <div>
-      <MyNavbar/>
-      <ItemListContainer greeting={'Cada mate tiene una historia por contar...'}/>
+      <Navigation />
     </div>
   )
 }

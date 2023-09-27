@@ -1,0 +1,18 @@
+.addBtn {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.removeBtn {
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.quantity {
+    margin-inline: 15px;
+    margin-bottom: 5px;
+}
+
+.addCart {
+    margin-bottom: 5px;
+}

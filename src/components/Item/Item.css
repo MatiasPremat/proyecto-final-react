@@ -1,0 +1,32 @@
+.itemimg {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid lightgray;
+}
+
+.title {
+    font-size: 25px;
+}
+
+.item {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.ver-mas {
+    text-decoration: none;
+    color: white;
+    margin: 34px;
+}
+
+.cardBtns {
+    display: grid;
+    place-items: center;
+}

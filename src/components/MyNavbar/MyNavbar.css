@@ -1,5 +1,44 @@
-#logo{
-    height: 80px;
+#logo {
+    height: 120px;
     width: auto;
-    padding-right: 30px;
+    padding-right: 20px;
+}
+
+#nav {
+    background-color: rgba(61, 40, 9, 0.932);
+    padding: 5px;
+}
+
+#brand {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    padding-right: 15px;
+}
+
+#slogan {
+    color: lightgrey;
+}
+
+#navdrop {
+    font-size: 20px;
+    padding: 0px 10px;
+    color: white;
+}
+
+#brand-slogan {
+    display: block;
+}
+
+.droplink {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-right: 20px;
 }
