@@ -1,7 +1,10 @@
 import ItemCount from "../ItemCount/ItemCount"
 import './ItemDetail.css'
 
-const ItemDetail = ({ id, name, description, color, price, stock, urlImg }) => {
+const ItemDetail = ({item}) => {
+
+    const { id, name, description, color, price, stock, urlImg } = item
+
     return (
         <div className="container" key={id}>
             <img src={urlImg} className="imgdetail" />
@@ -12,7 +15,7 @@ const ItemDetail = ({ id, name, description, color, price, stock, urlImg }) => {
                 <p>Color: {color}</p>
                 <p>${price}</p>
                 <div className='count'>
-                    <ItemCount stock={stock} initial={1} />
+                    <ItemCount stock={stock} initial={1} item={item} />
                 </div>
             </div>
         </div>

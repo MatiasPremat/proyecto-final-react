@@ -1,58 +1,35 @@
 import { useEffect, useState } from 'react';
-import products from '../../products.json';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import { db } from '../../db/db';
+import { collection, getDocs, where, query } from 'firebase/firestore';
 
 const ItemListContainer = () => {
 
     const [items, setItems] = useState([]);
-
     const [title, setTitle] = useState();
 
     //saves the category that the user has selected
     const category = useParams().category
 
-    //gets all the products from de products.json file
-    const getProducts = () => {
-        return new Promise((resolve, reject) => {
-            resolve(products)
-        })
-    };
-
-    //gets the items and category title every time category changes
     useEffect(() => {
-        getTitle();
-        getProducts()
-            .then((res) => {
-                if (category) {
-                    setItems(res.filter((item) => item.category === category))
-                } else {
-                    setItems(res)
-                    setTitle("Todos Nuestros Productos")
-                }
-            })
-    }, [category])
+        const productsRef = collection(db, "products");
+        const categoryQuery = category && query(productsRef, where("category", "==", category));
 
-//gets the category title name to show according to the one selected by the user
-    const getTitle = () => {
-        switch (category) {
-            case 'imperial':
-                setTitle('Imperiales');
-                break;
-            case 'torpedo':
-                setTitle('Torpedos');
-                break;
-            case 'camionero':
-                setTitle('Camioneros');
-                break;
-            case 'bombilla':
-                setTitle('Bombillas');
-                break;
-            case 'undefined':
-                setTitle('Todo');
-                break;
-        }
-    }
+        const queryRef = category ? categoryQuery : productsRef;
+
+        category ? setTitle(category) : setTitle("Todos Nuestros Productos");
+
+        getDocs(queryRef).then((res) =>{
+            const productsData = res.docs.map((productDoc) => (
+                {
+                    id: productDoc.id,
+                    ...productDoc.data()
+                }
+            ))
+            setItems(productsData);
+        })
+    }, [category])
 
     return (
         <div>

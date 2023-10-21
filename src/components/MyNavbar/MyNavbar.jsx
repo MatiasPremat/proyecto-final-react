@@ -24,23 +24,22 @@ const MyNavbar = () => {
                 <Link to='/' className='droplink'>Todo</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to='/imperial' className='droplink'>Imperiales</Link>
+                <Link to='/Imperiales' className='droplink'>Imperiales</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to='/torpedo' className='droplink'>Torpedos</Link>
+                <Link to='/Torpedos' className='droplink'>Torpedos</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
-                <Link to='/camionero' className='droplink'>Camioneros</Link>
+                <Link to='/Camioneros' className='droplink'>Camioneros</Link>
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item>
-                <Link to='/bombilla' className='droplink'>Bombillas</Link>
+                <Link to='/Bombillas' className='droplink'>Bombillas</Link>
               </NavDropdown.Item>
             </NavDropdown>
             <Link to='/nosotros' className='navlink'>Nosotros</Link>
-            <Link to='/contacto' className='navlink'>Contacto</Link>
           </Nav>
-          <Nav.Link href='#cart'><CartWidget /></Nav.Link>
+          <Nav.Link><CartWidget /></Nav.Link>
         </Navbar.Collapse>
       </Container>
     </Navbar>

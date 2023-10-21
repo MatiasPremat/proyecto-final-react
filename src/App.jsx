@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navigation from './routes/Navigation';
+import CartContext from './context/CartContext';
 
 function App() {
 
   return (
-    <div>
+    <CartContext>
       <Navigation />
-    </div>
+    </CartContext>
   )
 }
 

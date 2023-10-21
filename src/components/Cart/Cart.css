@@ -1,0 +1,33 @@
+#cart {
+    color: black;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#cart-total {
+    padding-inline: 10%;
+    margin-top: 20px;
+}
+
+.cart-product {
+    display: flex;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+.img-product {
+    height: 150px;
+    width: 150px;
+}
+
+.delete-btn {
+    background-color: white;
+    border: none;
+}
+
+.cart-btn{
+    background-color: rgba(61, 40, 9, 0.932);
+    border-color: rgba(61, 40, 9, 0.932);
+}

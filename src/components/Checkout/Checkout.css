@@ -1,0 +1,39 @@
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.checkout-form input {
+    padding: .5rem;
+    width: 18rem;
+    border-radius: .5rem;
+    border: 2px solid black;
+}
+
+.checkout-form input:focus {
+    outline: 0;
+    border: 2px solid var(--clr-main);
+    outline: 2px solid var(--clr-main);
+}
+
+.send-order-btn {
+    background-color: rgba(61, 40, 9, 0.932);
+    border-color: rgba(61, 40, 9, 0.932);
+}
+
+.succesfull-order {
+    display: block;
+}
+
+#go-back-link {
+    text-decoration: none;
+    color: white;
+}
+
+#go-back-btn {
+    background-color: rgba(61, 40, 9, 0.932);
+    border-color: rgba(61, 40, 9, 0.932);
+}

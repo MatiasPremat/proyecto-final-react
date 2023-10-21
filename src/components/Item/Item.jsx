@@ -4,7 +4,10 @@ import { Card } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom'
 
-const Item = ({ id, name, price, stock, urlImg }) => {
+const Item = ({ item }) => {
+
+    const { id, name, price, stock, urlImg } = item
+
     return (
         <Card style={{ width: '18rem' }} key={id} className='item'>
             <img variant="top" src={urlImg} className='itemimg' />
@@ -12,7 +15,7 @@ const Item = ({ id, name, price, stock, urlImg }) => {
                 <Card.Title><h1 className='title'>{name}</h1></Card.Title>
                 <Card.Text className='price'>${price}</Card.Text>
                 <div className='cardBtns'>
-                    <ItemCount stock={stock} initial={1} />
+                    <ItemCount stock={stock} initial={1} item={item}/>
                     <Button variant='dark'><Link to={`/item/:${id}`} className='ver-mas'>Ver más</Link></Button>
                 </div>
             </Card.Body>
